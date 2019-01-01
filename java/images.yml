@@ -2,8 +2,8 @@
 fish-pepper:
   params:
     - base
-  name: "fabric8/s2i-java"
-  build: "2.3.1"
+  name: "tagedieb/s2i-java"
+  build: "3.0.1"
 
 config:
   base:
@@ -46,19 +46,4 @@ config:
         maven: "3.5.4"
         jolokia: "1.6.0"
         jmxexporter: "0.3.1"
-    rhel:
-      withGradle: false
-      withMavenWrapper: false
-      from: "jboss/openjdk18-rhel7:1.1-7"
-      user: "jboss"
-      home: "/home/jboss"
-      javaSecurity: "/usr/lib/jvm/java/jre/lib/security/java.security"
-      description: "RHEL S2I Java builder image with OpenJDK 8"
-      # Re-enable when productised version of jolokia is available
-      # mavenRepo: "https://maven.repository.redhat.com/ga"
-      version:
-        maven: "3.3.3-1.el7"
-        # Re-enable when productised version is available:
-        # jolokia: "1.5.0.redhat-1"
-        jolokia: 1.5.0
-        jmxexporter: "0.10"
+

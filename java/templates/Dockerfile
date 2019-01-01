@@ -11,7 +11,8 @@ ENV JOLOKIA_VERSION="{{= fp.config.base.version.jolokia }}" \
     PATH=$PATH:"/usr/local/s2i" \
     AB_JOLOKIA_PASSWORD_RANDOM="true" \
     AB_JOLOKIA_AUTH_OPENSHIFT="true" \
-    JAVA_DATA_DIR="/deployments/data"
+    JAVA_DATA_DIR="/deployments/data" \
+    LANG="en_US.UTF-8"
 
 # Some version information
 LABEL io.fabric8.s2i.version.maven="{{= fp.config.base.version.maven }}" \

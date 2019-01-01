@@ -6,15 +6,15 @@ maintainer: "rhuss@redhat.com"
 # Meta info influencing the build
 fish-pepper:
   # Docker Repo User
-  repoUser: "fabric8"
+  repoUser: "tagedieb"
 
 # External blocks
 blocks:
   # run-java.sh for starting up Java processes
   - type: "git"
-    url: "https://github.com/fabric8io/run-java-sh.git"
+    url: "https://github.com/michael-wirth/run-java-sh.git"
     path: "fish-pepper"
-    tag: "v1.2.2"
+    tag: "v1.2.3"
   # jolokia integration taken from agent-bond
   - type: "git"
     url: "https://github.com/fabric8io/agent-bond.git"
